@@ -18,7 +18,16 @@
     
        <link type="text/css" rel="stylesheet" href="assets/css.css" />
   
-      
+        <script>
+//            FUNCAO PARA HOVER DA VIALACTEA SUAVE 
+            function devagarGalaxy(){
+                $("#galaxy").css("transform","scale(1)").css("transition","all 4s");
+            };
+             function entraGalaxy(){
+                $("#galaxy").css("transform","scale(1.1)").css("transition","all 2s");
+            };
+            
+        </script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
@@ -27,7 +36,7 @@
         <img class="fundo" src="assets/image/background-fundo.png">
         
         <a href="/planets.html">
-            <img id="galaxy" src="assets/image/galaxy.png">
+            <img id="galaxy" onmouseenter="entraGalaxy()" onmouseleave="devagarGalaxy()" src="assets/image/galaxy.png">
         </a>
     </div>    
        

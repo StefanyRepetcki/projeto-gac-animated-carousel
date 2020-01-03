@@ -6,14 +6,27 @@ html {
       min-height: 100%;
       overflow: hidden;
 }
+.back{
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 10px;
+    z-index: 1;
+    font-family: 'Playfair Display SC', serif;
+}
 #planeta{
     color: white;
-    text-align: center;
+    text-align: left;
+}
+.qualplaneta{
+    color: white !important;
+    text-align: justify;    
+    margin: auto;
 }
 .fundo{
     position: absolute;
     animation-name: zoomDoBanner; 
-    animation-duration: 35s;
+    animation-duration: 100s;
     animation-iteration-count: infinite;
     z-index: 0;
     width: 100%;
@@ -22,7 +35,8 @@ html {
 .description{
     background-color: black;
     opacity: 0.7;
-    width: 100%;
+    width: 50%;
+    float: left;
     height: 300px;
     bottom: 0;
     position: absolute;  
@@ -31,7 +45,12 @@ html {
     height: 300px;
     position: relative;
     z-index: 1;
+    padding: 0 10vw; 
 }
+.carousel-item{
+    opacity: 1 !important; 
+}
+
 #galaxy{
     position: relative;
     display: block;
@@ -39,15 +58,16 @@ html {
     z-index: 1;
    // width: 70%;
 }
-.carousel-item{
-    opacity: 1 !important; 
-}
+
+/*
 #galaxy:hover{
  	-moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
     transition: all 2s;
 }
+*/
+
 .title{
     z-index: 1;
     color: white;
