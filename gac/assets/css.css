@@ -14,6 +14,9 @@ html {
     z-index: 1;
     font-family: 'Playfair Display SC', serif;
 }
+.small-planet{
+    width: 100px;
+}
 #planeta{
     color: white;
     text-align: left;
