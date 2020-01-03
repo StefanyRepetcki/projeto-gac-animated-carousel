@@ -1,113 +1,141 @@
 html {
-    height: max-content;
-   
+	height: max-content;
 }
- body {
-      min-height: 100%;
-      overflow: hidden;
+
+body {
+	min-height: 100%;
+	overflow: hidden;
 }
-.back{
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 10px;
-    z-index: 1;
-    font-family: 'Playfair Display SC', serif;
+
+.sol {
+	display: block;
+	position: relative;
+	margin: auto;
+	top: 70px;
 }
-.small-planet{
-    width: 100px;
+
+.back {
+	color: white;
+	position: fixed;
+	top: 0;
+	left: 10px;
+	z-index: 1;
+	font-family: 'Playfair Display SC', serif;
 }
-#planeta{
-    color: white;
-    text-align: left;
-}
-.qualplaneta{
-    color: white !important;
-    text-align: justify;    
+
+.small-planet {
+    width: 150px;
+    display: block;
     margin: auto;
 }
-.fundo{
+
+#planeta {
+	color: white;
+	text-align: left;
+	margin: 0;
+	font-family: 'Playfair Display SC', serif;
+}
+
+.qualplaneta {
+	color: white !important;
+	text-align: justify;
+	margin: auto;
+	font-family: 'Playfair Display SC', serif;
+}
+
+.fundo {
+	position: absolute;
+	animation-name: zoomDoBanner;
+	animation-duration: 100s;
+	animation-iteration-count: infinite;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.description {
+	background-color: black;
+	opacity: 0.7;
+	width: 50%;
+	float: left;
+	height: 200px;
+	bottom: 0;
+	position: absolute;
+}
+
+.descriptionplan {    
     position: absolute;
-    animation-name: zoomDoBanner; 
-    animation-duration: 100s;
-    animation-iteration-count: infinite;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-}
-.description{
-    background-color: black;
-    opacity: 0.7;
-    width: 50%;
-    float: left;
-    height: 300px;
+    z-index: 1;
+    padding: 0 5vw;
     bottom: 0;
-    position: absolute;  
-}
-.descriptionplan{
-    height: 300px;
-    position: relative;
-    z-index: 1;
-    padding: 0 10vw; 
-}
-.carousel-item{
-    opacity: 1 !important; 
+    margin-bottom: 20px;
 }
 
-#galaxy{
-    position: relative;
-    display: block;
-    margin: auto;
-    z-index: 1;
-   // width: 70%;
+.carousel {
+	position: absolute;
+	top: 130px !important;
 }
 
-/*
-#galaxy:hover{
- 	-moz-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-    transition: all 2s;
+.carousel-item {
+	opacity: 1 !important;
 }
-*/
 
-.title{
-    z-index: 1;
-    color: white;
-    display: block;
-    text-align: center;
-    margin: auto;
+#galaxy {
+	position: relative;
+	display: block;
+	margin: auto;
+	z-index: 1;
+}
+
+.title {
+	z-index: 999;
+	color: white;
+	display: block;
+	text-align: center;    
     margin-bottom: 0;
-    font-family: 'Playfair Display SC', serif;
-}
-.galaxy{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-footer{
-    color: white;
-    bottom: 0;
-    position: fixed;
-    right: 10px;
+	font-family: 'Changa One', cursive;
+    
+  position: relative;
+  -webkit-animation-name: nomedagalaxia;  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s;  /* Safari 4.0 - 8.0 */  
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation-name: nomedagalaxia;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
 }
 
-.planetas{
-    width: 400px;
+.galaxy {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100%;
 }
+
+.planetas {
+	width: 400px;
+}
+
 /* Standard syntax */
 @keyframes zoomDoBanner {
-  50% {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5);     
-  }
-  100%{
-    -ms-transform: scale(1); /* IE 9 */
-    -webkit-transform: scale(1); /* Safari 3-8 */
-    transform: scale(1);
-  }
+	50% {
+		-ms-transform: scale(1.5);		/* IE 9 */
+		-webkit-transform: scale(1.5);		/* Safari 3-8 */
+		transform: scale(1.5);
+	}
+	100% {
+		-ms-transform: scale(1);		/* IE 9 */
+		-webkit-transform: scale(1);		/* Safari 3-8 */
+		transform: scale(1);
+	}
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes nomedagalaxia {
+  from {top: 300px;font-size: 5px;opacity: 70%;}
+  to {top: 100px;font-size: 60px;opacity: none;}
 }
 
+@keyframes nomedagalaxia {
+  from {top: 300px;font-size: 5px;opacity: 70%;}
+  to {top: 100px; font-size: 60px;opacity: none;}
+}
