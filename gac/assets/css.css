@@ -12,6 +12,10 @@ body {
 	position: relative;
 	margin: auto;
 	top: 70px;
+    
+    animation-name: zoomDoBanner;
+	animation-duration: 100s;
+	animation-iteration-count: infinite;
 }
 
 .back {
