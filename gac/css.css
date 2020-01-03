@@ -1,0 +1,22 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+.home{
+    background: url(assets/image/background-fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+#galaxy{
+    position: relative;
+    display: block;
+    margin: auto;
+    z-index: 1;
+    width: 70%;
+}
