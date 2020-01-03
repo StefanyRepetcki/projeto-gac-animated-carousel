@@ -1,9 +1,10 @@
 html {
     height: max-content;
+   
 }
-body {
-  min-height: 100%;
-  overflow: hidden;
+ body {
+      min-height: 100%;
+      overflow: hidden;
 }
 #planeta{
     color: white;
