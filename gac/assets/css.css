@@ -12,6 +12,10 @@ body {
 	position: relative;
 	margin: auto;
 	top: 70px;
+    
+    animation-name: zoomDoBanner;
+	animation-duration: 100s;
+	animation-iteration-count: infinite;
 }
 
 .back {
@@ -58,9 +62,15 @@ body {
 	opacity: 0.7;
 	width: 50%;
 	float: left;
-	height: 200px;
+	height: 220px;
 	bottom: 0;
 	position: absolute;
+}
+
+.fechar{    
+    color: white;
+    text-align: right;
+    display: block;
 }
 
 .descriptionplan {    
