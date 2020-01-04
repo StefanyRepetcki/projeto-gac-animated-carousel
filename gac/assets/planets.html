@@ -12,15 +12,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Projeto GAC - Galaxy Animated Carousel</title>
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="assets/materialize/css/materialize.min.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="assets/materialize/js/materialize.js" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="materialize/js/materialize.js" media="screen,projection" />
 
-    <link type="text/css" rel="stylesheet" href="assets/css.css" />
+    <link type="text/css" rel="stylesheet" href="css.css" />
 
 <!--    animacao-->
-     <link type="text/css" rel="stylesheet" href="assets/animation.css" />
+     <link type="text/css" rel="stylesheet" href="animation.css" />
     <audio autoplay loop >
-      <source src="/assets/musicafundo.mp3" type="audio/mpeg">
+      <source src="musicafundo.mp3" type="audio/mpeg">
     </audio>
     <script>
         $(document).ready(function() {
@@ -59,9 +59,9 @@
 </head>
 <body>
     <div class="home">
-        <img class="fundo" src="assets/image/background-fundo.png">
-        <a class="back" href="/index.html"><h6 >back</h6></a>
-        <a href="#" value="Sol" onclick="funcaoPlaneta(this)"><img src="assets/image/sol.png" class="img-responsive planetas sol"></a>
+        <img class="fundo" src="image/background-fundo.png">
+        <a class="back" href="../index.html"><h6 >back</h6></a>
+        <a href="#" value="Sol" onclick="funcaoPlaneta(this)"><img src="image/sol.png" class="img-responsive planetas sol"></a>
         <div class="row">
             <div class="carousel">
 
@@ -69,7 +69,7 @@
                 <a class="carousel-item marte" href="#" value="Marte" onclick="funcaoPlaneta(this)"></a>
                 <a class="carousel-item mercurio" href="#" value="Mercurio" onclick="funcaoPlaneta(this)"></a>
                 <a class="carousel-item netuno" href="#" value="Netuno" onclick="funcaoPlaneta(this)"></a>
-                <a class="carousel-item saturno" href="#" value="Saturno" onclick="funcaoPlaneta(this)"><img class="ring" src="assets/image/saturno.png"></a>
+                <a class="carousel-item saturno" href="#" value="Saturno" onclick="funcaoPlaneta(this)"><img class="ring" src="image/saturno.png"></a>
                 <a class="carousel-item earth" href="#" value="Terra" onclick="funcaoPlaneta(this)"></a>
                 <a class="carousel-item uranus" href="#" value="Urano" onclick="funcaoPlaneta(this)"></a>
                 <a class="carousel-item venus" href="#" value="Venus" onclick="funcaoPlaneta(this)"></a>
@@ -80,7 +80,7 @@
     <div style="display:none" class="row" id="descricao">
         <div class="descriptionplan">
             <div style="display:none;" class="qualplaneta" value="Jupiter">
-                <div class="col s12 m3 animated fadeInLeft delay-0.5s"> <img src="assets/image/jupter.png" class="img-responsive small-planet"> </div>
+                <div class="col s12 m3 animated fadeInLeft delay-0.5s"> <img src="image/jupter.png" class="img-responsive small-planet"> </div>
                 <div class="col s12 m9 animated fadeInUp delay-0.5s">
                     <div><a class="fechar" href="#" onclick="fecharDescricao()">X</a></div>
                     <h2 id="planeta">Júpiter</h2> Júpiter é o maior planeta do Sistema Solar possuindo uma massa 318 vezes maior que a da Terra. Diferente dos quatro planetas mais próximos ao Sol, Júpiter é constituído de gases como hidrogênio, hélio, metano, amônia e vestígios de vapor d'água.
@@ -88,7 +88,7 @@
                 </div>
             </div>
             <div style="display:none;" class="qualplaneta" value="Marte">
-                <div class="col s12 m3 animated fadeInLeft delay-0.5s"> <img src="assets/image/marte.png" class="img-responsive small-planet"> </div>
+                <div class="col s12 m3 animated fadeInLeft delay-0.5s"> <img src="image/marte.png" class="img-responsive small-planet"> </div>
                 <div class="col s12 m9 animated fadeInUp delay-0.5s">
                     <div><a class="fechar" href="#" onclick="fecharDescricao()">X</a></div>
                     <h2 id="planeta">Marte</h2> Marte, também chamado de Planeta Vermelho, é o quarto planeta na ordem em relação ao Sol, estando a, aproximadamente, 227.940.000 km de distância dele. É um dos planetas que também apresentam condições de ser visto a olho nu. É constituído por silicatos e basaltos, e sua atmosfera é composta basicamente por gás carbônico, nitrogênio e alguns vestígios de oxigênio, monóxido de carbono e vapor d'água.
@@ -96,7 +96,7 @@
                 </div>
             </div>
             <div style="display:none;" class="qualplaneta" value="Mercurio">
-                <div class="col s12 m3 animated fadeInLeft delay-0.5s"> <img src="assets/image/mercurio.png" class="img-responsive small-planet"> </div>
+                <div class="col s12 m3 animated fadeInLeft delay-0.5s"> <img src="image/mercurio.png" class="img-responsive small-planet"> </div>
                 <div class="col s12 m9  m9 animated fadeInUp delay-0.5s">
                     <div><a class="fechar" href="#" onclick="fecharDescricao()">X</a></div>
                     <h2 id="planeta">Mercúrio</h2> Mercúrio é o planeta mais próximo do Sol, cerca de 57.910.000 km, e é o que possui a menor massa, ou seja, é o menor entre os planetas do Sistema Solar. A temperatura na sua superfície pode chegar, durante o período diurno, a 550ºC.
@@ -104,7 +104,7 @@
                 </div>
             </div>
             <div style="display:none;" class="qualplaneta" value="Netuno">
-                <div class="col s12 m3  animated fadeInLeft delay-0.5s"> <img src="assets/image/netuno.png" class="img-responsive small-planet"> </div>
+                <div class="col s12 m3  animated fadeInLeft delay-0.5s"> <img src="image/netuno.png" class="img-responsive small-planet"> </div>
                 <div class="col s12 m9 animated fadeInUp delay-0.5s">
                     <div><a class="fechar" href="#">X</a></div>
                     <h2 id="planeta">Netuno</h2> Netuno foi descoberto em 1845 e não pode ser visto a olho nu. É o último planeta do Sistema Solar em relação ao Sol, estando a cerca de 4.504.300.000 km de distância desse.
@@ -112,14 +112,14 @@
                 </div>
             </div>
             <div style="display:none;" class="qualplaneta" value="Saturno">
-                <div class="col s12 m3 animated fadeInLeft delay-0.5s"> <img src="assets/image/saturno.png" class="img-responsive small-planet"> </div>
+                <div class="col s12 m3 animated fadeInLeft delay-0.5s"> <img src="image/saturno.png" class="img-responsive small-planet"> </div>
                 <div class="col s12 m9 animated fadeInUp delay-0.5s">
                     <div><a class="fechar" href="#" onclick="fecharDescricao()">X</a></div>
                     <h2 id="planeta">Saturno</h2> Saturno encontra-se a, aproximadamente, 1.429.400.000 km do Sol e é o segundo maior planeta do Sistema Solar. Sua composição assemelha-se à de Júpiter: hidrogênio, hélio, metano, amônia e vestígios de vapor d'água. A temperatura em Saturno pode chegar a -140ºC. Esse planeta é muito conhecido pelos seus anéis, compostos por gelo, que refletem até 80% da radiação solar. Saturno possui 18 satélites naturais, sendo o maior deles conhecido como Titã.
                 </div>
             </div>
             <div style="display:none;" class="qualplaneta" value="Terra">
-                <div class="col s12 m3 animated fadeInLeft delay-0.5s"> <img src="assets/image/terra.png" class="img-responsive small-planet">
+                <div class="col s12 m3 animated fadeInLeft delay-0.5s"> <img src="image/terra.png" class="img-responsive small-planet">
                 </div>
                 <div class="col s12 m9 animated fadeInUp delay-0.5s">
                     <div><a class="fechar" href="#" onclick="fecharDescricao()">X</a></div>
@@ -128,7 +128,7 @@
                 </div>
             </div>
             <div style="display:none;" class="qualplaneta" value="Urano">
-                <div class="col s12 m3 animated fadeInLeft delay-0.5s"> <img src="assets/image/urano.png" class="img-responsive small-planet"> </div>
+                <div class="col s12 m3 animated fadeInLeft delay-0.5s"> <img src="image/urano.png" class="img-responsive small-planet"> </div>
                 <div class="col s12 m9 animated fadeInUp delay-0.5s">
                     <div><a class="fechar" href="#" onclick="fecharDescricao()">X</a></div>
                     <h2 id="planeta">Urano</h2> Urano, um dos planetas gasosos, é o terceiro maior planeta do Sistema Solar, estando a, aproximadamente, 2.880.990.000 km do Sol. Suas características assemelham-se às de Júpiter e Saturno.
@@ -136,7 +136,7 @@
                 </div>
             </div>
             <div style="display:none;" class="qualplaneta" value="Venus">
-                <div class="col s12 m3 animated fadeInLeft delay-0.5s"> <img src="assets/image/venus.png" class="img-responsive small-planet"> </div>
+                <div class="col s12 m3 animated fadeInLeft delay-0.5s"> <img src="image/venus.png" class="img-responsive small-planet"> </div>
                 <div class="col s12 m9 animated fadeInUp delay-0.5s">
                     <div><a class="fechar" href="#" onclick="fecharDescricao()">X</a></div>
                     <h2 id="planeta">Vênus</h2> Vênus, também conhecido como Estrela Dalva, é o segundo planeta em relação ao Sol, estando, aproximadamente, a 108.200.000 km de distância. É um planeta de fácil visibilidade, antes do nascer ou depois do pôr do Sol, a olho nu.
@@ -145,7 +145,7 @@
                 </div>
             </div>
             <div style="display:none;" class="row qualplaneta" value="Sol">
-                <div class="col s12 m3 animated fadeInLeft delay-0.5s"> <img src="assets/image/sol.png" class="img-responsive small-planet"> </div>
+                <div class="col s12 m3 animated fadeInLeft delay-0.5s"> <img src="image/sol.png" class="img-responsive small-planet"> </div>
                 <div class="col s12 m9 animated fadeInUp delay-0.5s">
                    <div><a class="fechar" href="#" onclick="fecharDescricao()">X</a></div>
                     <h2 id="planeta">Sol</h2> O Sol é a estrela do sistema solar. Todos os corpos celestes desse sistema, inclusive a Terra, giram em torno dele. O diâmetro do Sol é de 1,392 milhão de quilômetros. Ele é composto principalmente por hidrogênio e hélio, além de ferro, níquel, oxigênio, silício, carbono, nitrogênio, enxofre, etc.
@@ -158,6 +158,6 @@
        
     </div>
     <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="assets/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 </body>
 </html>
