@@ -90,6 +90,12 @@ body {
 	opacity: 1 !important;
 }
 
+.ring{ 
+    width: 300px !important;
+    position: relative;
+    right: 50px;
+    transform: skew(-14deg, 15deg);
+}
 #galaxy {
 	position: relative;
 	display: block;
@@ -125,6 +131,112 @@ body {
 .planetas {
 	width: 400px;
 }
+/* Movimento dos planetas */
+.earth {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-image: url(/projeto-gac-animated-carousel/gac/assets/image/Terra.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
+    
+    -webkit-animation: spin 60s linear infinite;
+}
+
+.uranus {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-image: url(/projeto-gac-animated-carousel/gac/assets/image/Uranio.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
+    
+    -webkit-animation: spin 60s linear infinite;
+}
+
+.jupiter {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-image: url(/projeto-gac-animated-carousel/gac/assets/image/Jupiter.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
+    
+    -webkit-animation: spin 60s linear infinite;
+}
+
+.venus {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-image: url(/projeto-gac-animated-carousel/gac/assets/image/Venus.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
+    
+    -webkit-animation: spin 60s linear infinite;
+}
+
+.marte {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-image: url(/projeto-gac-animated-carousel/gac/assets/image/Marte.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
+    
+    -webkit-animation: spin 60s linear infinite;
+}
+
+.mercurio {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-image: url(/projeto-gac-animated-carousel/gac/assets/image/Mercurio.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
+    
+    -webkit-animation: spin 60s linear infinite;
+}
+.netuno {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-image: url(/projeto-gac-animated-carousel/gac/assets/image/Netuno.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
+    
+    -webkit-animation: spin 60s linear infinite;
+}
+
+.saturno {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-image: url(/projeto-gac-animated-carousel/gac/assets/image/Saturno.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
+    
+    -webkit-animation: spin 60s linear infinite;
+}
+
+@-webkit-keyframes spin{
+    from{
+        background-position: left center;
+    }
+    to{
+        background-position: -400px center;
+    }
+}
+
+/* Fim Movimento */
 
 /* Standard syntax */
 @keyframes zoomDoBanner {
