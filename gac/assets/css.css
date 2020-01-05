@@ -131,100 +131,134 @@ body {
 .planetas {
 	width: 400px;
 }
+
 /* Movimento dos planetas */
 .earth {
     margin: auto;
     width: 200px;
     height: 200px;
-    background-image: url(image/Terra.jpg);
+    background-image: url("image/Terra.jpg");
     border-radius: 50%;
     background-size: cover;
     box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
     
-    -webkit-animation: spin 60s linear infinite;
+    -webkit-animation: spin 30s linear infinite;
 }
 
 .uranus {
     margin: auto;
     width: 200px;
     height: 200px;
-    background-image: url(image/Uranio.jpg);
+    background-image: url("image/Uranio.jpg");
     border-radius: 50%;
     background-size: cover;
     box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
     
-    -webkit-animation: spin 60s linear infinite;
+
+    -webkit-animation: spin 20s linear infinite;
 }
 
 .jupiter {
     margin: auto;
-    width: 100px;
-    height: 100px;
-    background-image: url(image/Jupiter.jpg);
+    width: 300px !important;
+    height: 300px !important;
+    background-image: url("image/Jupiter.jpg");
     border-radius: 50%;
     background-size: cover;
+    top: -40px !important;
     box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
     
-    -webkit-animation: spin 60s linear infinite;
+
+    -webkit-animation: spinJupiter 10s linear infinite;
 }
 
 .venus {
     margin: auto;
     width: 200px;
     height: 200px;
-    background-image: url(image/Venus.jpg);
+    background-image: url("image/Venus.jpg");
     border-radius: 50%;
     background-size: cover;
     box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
     
-    -webkit-animation: spin 60s linear infinite;
+
+    -webkit-animation: spin 100s linear infinite;
+
 }
 
-.marte {
+.mars {
     margin: auto;
-    width: 200px;
-    height: 200px;
-    background-image: url(image/Marte.jpg);
+    width: 200px !important;
+    height: 200px !important;
+    background-image: url("image/Marte.jpg");
     border-radius: 50%;
     background-size: cover;
-    box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
+    top: 30px !important;
+    left: 70px !important;
+    box-shadow: -10px -20px 50px 0.2px #000 inset, 0 0 2px 0.2px #000;
     
-    -webkit-animation: spin 60s linear infinite;
+    -webkit-animation: spinMars 30s linear infinite;
+
 }
 
-.mercurio {
+.mercury {
     margin: auto;
-    width: 200px;
-    height: 200px;
-    background-image: url(image/Mercurio.jpg);
+    width: 100px !important;
+    height: 100px !important;
+    background-image: url("image/Mercurio.jpg");
     border-radius: 50%;
     background-size: cover;
     box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
     
-    -webkit-animation: spin 60s linear infinite;
+    -webkit-animation: spin 40s linear infinite;
+
 }
-.netuno {
+.neptune {
     margin: auto;
     width: 200px;
     height: 200px;
-    background-image: url(image/Netuno.jpg);
+    background-image: url("image/Netuno.jpg");
     border-radius: 50%;
     background-size: cover;
     box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
     
-    -webkit-animation: spin 60s linear infinite;
+    -webkit-animation: spin 25s linear infinite;
+
 }
 
-.saturno {
+.saturn {
     margin: auto;
     width: 200px;
     height: 200px;
-    background-image: url(image/Saturno.jpg);
+    background-image: url("image/Saturno.jpg");
     border-radius: 50%;
     background-size: cover;
     box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
     
-    -webkit-animation: spin 60s linear infinite;
+    -webkit-animation: spin 15s linear infinite;
+}
+
+/* Fim Movimento dos planetas */
+
+/* animações individuais */
+
+@-webkit-keyframes spinJupiter{
+    from{
+        background-position: left center;
+    }
+    to{
+        background-position: -600px center;
+    }
+}
+
+@-webkit-keyframes spinMars{
+    from{
+        background-position: left center;
+    }
+    to{
+        background-position: -400px center;
+    }
+
 }
 
 @-webkit-keyframes spin{
@@ -235,8 +269,8 @@ body {
         background-position: -400px center;
     }
 }
+/* Fim animações individuais*/
 
-/* Fim Movimento */
 
 /* Standard syntax */
 @keyframes zoomDoBanner {
