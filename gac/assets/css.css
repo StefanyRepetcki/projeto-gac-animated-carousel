@@ -154,6 +154,7 @@ body {
     background-size: cover;
     box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
     
+
     -webkit-animation: spin 20s linear infinite;
 }
 
@@ -167,6 +168,7 @@ body {
     top: -40px !important;
     box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
     
+
     -webkit-animation: spinJupiter 10s linear infinite;
 }
 
@@ -179,7 +181,9 @@ body {
     background-size: cover;
     box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
     
+
     -webkit-animation: spin 100s linear infinite;
+
 }
 
 .mars {
@@ -194,6 +198,7 @@ body {
     box-shadow: -10px -20px 50px 0.2px #000 inset, 0 0 2px 0.2px #000;
     
     -webkit-animation: spinMars 30s linear infinite;
+
 }
 
 .mercury {
@@ -206,6 +211,7 @@ body {
     box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
     
     -webkit-animation: spin 40s linear infinite;
+
 }
 .neptune {
     margin: auto;
@@ -217,6 +223,7 @@ body {
     box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
     
     -webkit-animation: spin 25s linear infinite;
+
 }
 
 .saturn {
@@ -251,6 +258,7 @@ body {
     to{
         background-position: -400px center;
     }
+
 }
 
 @-webkit-keyframes spin{
