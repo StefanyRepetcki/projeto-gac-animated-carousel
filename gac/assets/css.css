@@ -51,8 +51,10 @@ hr{
 
 .small-planet {
     width: 150px;
+    z-index: 1;
     display: block;
     margin: auto;
+    position: absolute;
 }
 
 #planeta {
@@ -79,7 +81,38 @@ hr{
 	height: 100%;
 }
 
+.middle-indicator{
+   position:absolute;
+   top:50%;
+}   
 
+.middle-indicator-text{
+    font-size: 4.2rem;
+}
+
+a.middle-indicator-text{
+    color:white !important;
+}
+
+.content-indicator{
+    width: 64px;
+    height: 74px;
+    background: none;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px; 
+}
+
+.indicators{
+    visibility: hidden;
+}
+
+.indica{
+    display: block;
+    width: 100%;
+    z-index: 9999;
+}
+        
 .caracteristicas-planets{
     position: fixed;
     top: 200px;
@@ -169,8 +202,8 @@ hr{
 /* Movimento dos planetas */
 .earth {
     margin: auto;
-    width: 200px;
-    height: 200px;
+    width: 200px !important;
+    height: 200px !important;
     background-image: url("image/Terra.jpg");
     border-radius: 50%;
     background-size: cover;
@@ -181,8 +214,8 @@ hr{
 
 .uranus {
     margin: auto;
-    width: 200px;
-    height: 200px;
+    width: 200px !important;
+    height: 200px !important;
     background-image: url("image/Uranio.jpg");
     border-radius: 50%;
     background-size: cover;
@@ -194,22 +227,20 @@ hr{
 
 .jupiter {
     margin: auto;
-    width: 300px !important;
-    height: 300px !important;
+    width: 200px !important;
+    height: 200px !important;
     background-image: url("image/Jupiter.jpg");
     border-radius: 50%;
     background-size: cover;
-    top: -40px !important;
-    box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
-    
+    box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000; 
 
     -webkit-animation: spinJupiter 10s linear infinite;
 }
 
 .venus {
     margin: auto;
-    width: 200px;
-    height: 200px;
+    width: 200px !important;
+    height: 200px !important;
     background-image: url("image/Venus.jpg");
     border-radius: 50%;
     background-size: cover;
@@ -227,8 +258,8 @@ hr{
     background-image: url("image/Marte.jpg");
     border-radius: 50%;
     background-size: cover;
-    top: 30px !important;
-    left: 70px !important;
+   // top: 30px !important;
+   // left: 70px !important;
     box-shadow: -10px -20px 50px 0.2px #000 inset, 0 0 2px 0.2px #000;
     
     -webkit-animation: spinMars 30s linear infinite;
@@ -237,8 +268,8 @@ hr{
 
 .mercury {
     margin: auto;
-    width: 100px !important;
-    height: 100px !important;
+    width: 200px !important;
+    height: 200px !important;
     background-image: url("image/Mercurio.jpg");
     border-radius: 50%;
     background-size: cover;
@@ -249,8 +280,8 @@ hr{
 }
 .neptune {
     margin: auto;
-    width: 200px;
-    height: 200px;
+    width: 200px !important;
+    height: 200px !important;
     background-image: url("image/Netuno.jpg");
     border-radius: 50%;
     background-size: cover;
@@ -262,14 +293,28 @@ hr{
 
 .saturn {
     margin: auto;
-    width: 200px;
-    height: 200px;
+    width: 200px !important;
+    height: 200px !important;
     background-image: url("image/Saturno.jpg");
     border-radius: 50%;
     background-size: cover;
     box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
     
     -webkit-animation: spin 15s linear infinite;
+}
+.minisaturn {    
+    left: 30px;
+    position: absolute;
+    z-index: 0;
+    width: 100px !important;
+    height: 90px !important;
+    background-image: url(image/Saturno.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
+    -webkit-animation: spin 15s linear infinite;
+}
+
 }
 
 /* Fim Movimento dos planetas */

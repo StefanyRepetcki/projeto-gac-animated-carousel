@@ -17,6 +17,7 @@
 
     <link type="text/css" rel="stylesheet" href="css.css" />
 
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 <!--    animacao-->
      <link type="text/css" rel="stylesheet" href="animation.css" />
     <audio autoplay loop >
@@ -27,6 +28,7 @@
             $('.carousel').carousel({
                 numVisible: 9,
                 fullWidth: false,
+                indicators: true,
             });
         });
 
@@ -49,31 +51,58 @@
                     $("#descricao > div.descriptionplan > div:nth-child(" + x + ")").css("display", "none");
                 };
                 
-            };
-            
+            };            
         };
         function fecharDescricao(){ 
             $("#descricao").fadeOut();
+        };        
+        function anterior(){
+           $('.carousel').carousel('prev');
+           setTimeout(
+                function(){                    
+                   var activePlanet = $(".active");
+                   funcaoPlaneta(activePlanet);
+          }, 1000); 
         };
-    </script>
+        function proximo(){         
+
+           $('.carousel').carousel('next');            
+            setTimeout(
+                function(){
+                    var activePlanet = $(".active");              
+                    funcaoPlaneta(activePlanet);
+                }, 1000);           
+          
+        };            
+    </script>    
+    <style>       
+
+
+    </style>
 </head>
 <body>
     <div class="home">
         <img class="fundo" src="image/background-fundo.png">
         <a class="back" href="../index.html"><h6 >back</h6></a>
         <a href="#" value="Sol" onclick="funcaoPlaneta(this)"><img src="image/sol.png" class="img-responsive planetas sol"></a>
-        <div class="row">
-            <div class="carousel">
-                <a class="carousel-item jupiter" href="#" value="Jupiter" onclick="funcaoPlaneta(this)">    
-                </a>
+        <div class="row">            
+            <div class="carousel" data-indicators="true" id="carouselPlanets">                 
+                <a class="carousel-item jupiter" href="#" value="Jupiter" onclick="funcaoPlaneta(this)"></a>
                 <a class="carousel-item mars" href="#" value="Marte" onclick="funcaoPlaneta(this)"></a>
                 <a class="carousel-item mercury" href="#" value="Mercurio" onclick="funcaoPlaneta(this)"></a>
                 <a class="carousel-item neptune" href="#" value="Netuno" onclick="funcaoPlaneta(this)"></a>
                 <a class="carousel-item saturn" href="#" value="Saturno" onclick="funcaoPlaneta(this)"><img class="ring" src="image/saturno.png"></a>
                 <a class="carousel-item earth" href="#" value="Terra" onclick="funcaoPlaneta(this)"></a>
                 <a class="carousel-item uranus" href="#" value="Urano" onclick="funcaoPlaneta(this)"></a>
-                <a class="carousel-item venus" href="#" value="Venus" onclick="funcaoPlaneta(this)"></a>
-                
+                <a class="carousel-item venus" href="#" value="Venus" onclick="funcaoPlaneta(this)"></a>                
+            </div>
+             <div class="indica carousel-fixed-item center middle-indicator">                
+                <div class="left" >
+                 <a href="#" onclick="anterior()" class="anterior middle-indicator-text waves-effect waves-light content-indicator"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                </div>
+                <div class="right">
+                 <a href="#" onclick="proximo()" class="proximo middle-indicator-text waves-effect waves-light content-indicator"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                </div>                
             </div>
         </div>
     </div>
@@ -212,7 +241,7 @@
                         </ul>
                      </div>
                 </div>
-                <div class="col s12 m3 animated fadeInLeft delay-0.5s"> <img src="image/saturno.png" class="img-responsive small-planet"> </div>
+                <div class="col s12 m3 animated fadeInLeft delay-0.5s"> <div class="minisaturn"></div><img src="image/saturno.png" class="img-responsive small-planet"> </div>
                 <div class="col s12 m9 animated fadeInUp delay-0.5s">
                     <div><a class="fechar" href="#" onclick="fecharDescricao()">X</a></div>
                     <h2 id="planeta">Saturno</h2> Saturno encontra-se a, aproximadamente, 1.429.400.000 km do Sol e é o segundo maior planeta do Sistema Solar. Sua composição assemelha-se à de Júpiter: hidrogênio, hélio, metano, amônia e vestígios de vapor d'água. A temperatura em Saturno pode chegar a -140ºC. Esse planeta é muito conhecido pelos seus anéis, compostos por gelo, que refletem até 80% da radiação solar. Saturno possui 18 satélites naturais, sendo o maior deles conhecido como Titã.
