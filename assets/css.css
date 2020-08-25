@@ -1,52 +1,55 @@
 html {
-	height: max-content;
+    height: max-content;
 }
 
 body {
-	min-height: 100%;
-	overflow: hidden;
+    min-height: 100%;
+    overflow: hidden;
 }
-ul{
+
+ul {
     text-align: center;
 }
-li{
+
+li {
     text-shadow: 1px 1px 2px black;
     height: 20px;
     padding-bottom: 5px;
 }
 
-hr{
+hr {
     width: 250px;
     border-bottom: 1px solid white;
-    margin: 0 ;
-    float: left; 
+    margin: 0;
+    float: left;
     margin-top: 6.4px;
 }
-.inclinado{
+
+.inclinado {
     width: 20px;
     border: 1px solid white;
-    margin: auto 0 ;
+    margin: auto 0;
     float: left;
-    transform: skew(20deg,30deg);
+    transform: skew(20deg, 30deg);
 }
+
 .sol {
-	display: block;
-	position: relative;
-	margin: auto;
-	top: 70px;
-    
+    display: block;
+    position: relative;
+    margin: auto;
+    top: 70px;
     animation-name: zoomDoBanner;
-	animation-duration: 100s;
-	animation-iteration-count: infinite;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
 }
 
 .back {
-	color: white;
-	position: fixed;
-	top: 0;
-	left: 10px;
-	z-index: 1;
-	font-family: 'Playfair Display SC', serif;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 10px;
+    z-index: 1;
+    font-family: 'Playfair Display SC', serif;
 }
 
 .small-planet {
@@ -58,89 +61,89 @@ hr{
 }
 
 #planeta {
-	color: white;
-	text-align: left;
-	margin: 0;
-	font-family: 'Playfair Display SC', serif;
+    color: white;
+    text-align: left;
+    margin: 0;
+    font-family: 'Playfair Display SC', serif;
 }
 
 .qualplaneta {
-	color: white !important;
-	text-align: justify;
-	margin: auto;
-	font-family: 'Playfair Display SC', serif;
+    color: white !important;
+    text-align: justify;
+    margin: auto;
+    font-family: 'Playfair Display SC', serif;
 }
 
 .fundo {
-	position: absolute;
-	animation-name: zoomDoBanner;
-	animation-duration: 100s;
-	animation-iteration-count: infinite;
-	z-index: 0;
-	width: 100%;
-	height: 100%;
+    position: absolute;
+    animation-name: zoomDoBanner;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.middle-indicator{
-   position:absolute;
-   top:50%;
-}   
+.middle-indicator {
+    position: absolute;
+    top: 50%;
+}
 
-.middle-indicator-text{
+.middle-indicator-text {
     font-size: 4.2rem;
 }
 
-a.middle-indicator-text{
-    color:white !important;
+a.middle-indicator-text {
+    color: white !important;
 }
 
-.content-indicator{
+.content-indicator {
     width: 64px;
     height: 74px;
     background: none;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
-    border-radius: 50px; 
+    border-radius: 50px;
 }
 
-.indicators{
+.indicators {
     visibility: hidden;
 }
 
-.indica{
+.indica {
     display: block;
     width: 100%;
     z-index: 9999;
 }
-        
-.caracteristicas-planets{
+
+.caracteristicas-planets {
     position: fixed;
     top: 200px;
     width: 100%;
 }
 
-.caracteristicas-planets-son{
+.caracteristicas-planets-son {
     width: 300px;
     margin-right: 27vw;
 }
 
 .description {
-	background-color: black;
-	opacity: 0.7;
-	width: 50%;
-	float: left;
-	height: 200px;
-	bottom: 0;
-	position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    width: 50%;
+    float: left;
+    height: 200px;
+    bottom: 0;
+    position: absolute;
 }
 
-.fechar{    
+.fechar {
     color: white;
     position: absolute;
     right: 0;
 }
 
-.descriptionplan {    
+.descriptionplan {
     height: 200px;
     position: absolute;
     z-index: 1;
@@ -149,57 +152,62 @@ a.middle-indicator-text{
 }
 
 .carousel {
-	position: absolute;
-	top: 40px !important;
+    position: absolute;
+    top: 40px !important;
 }
 
 .carousel-item {
-	opacity: 1 !important;
+    opacity: 1 !important;
 }
 
-.ring{ 
+.ring {
     width: 300px !important;
     position: relative;
     right: 50px;
     transform: skew(-14deg, 15deg);
 }
+
 #galaxy {
-	position: relative;
-	display: block;
-	margin: auto;
-	z-index: 1;
+    position: relative;
+    display: block;
+    margin: auto;
+    z-index: 1;
 }
 
 .title {
-	z-index: 999;
-	color: white;
-	display: block;
-	text-align: center;    
+    z-index: 999;
+    color: white;
+    display: block;
+    text-align: center;
     margin-bottom: 0;
-	font-family: 'Changa One', cursive;
-    
-  position: relative;
-  -webkit-animation-name: nomedagalaxia;  /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 3s;  /* Safari 4.0 - 8.0 */  
-  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
-  animation-name: nomedagalaxia;
-  animation-duration: 3s;  
-  animation-fill-mode: forwards;
+    font-family: 'Changa One', cursive;
+    position: relative;
+    -webkit-animation-name: nomedagalaxia;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards;
+    /* Safari 4.0 - 8.0 */
+    animation-name: nomedagalaxia;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 
 .galaxy {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
-	height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .planetas {
-	width: 400px;
+    width: 400px;
 }
 
+
 /* Movimento dos planetas */
+
 .earth {
     margin: auto;
     width: 200px !important;
@@ -208,7 +216,6 @@ a.middle-indicator-text{
     border-radius: 50%;
     background-size: cover;
     box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
-    
     -webkit-animation: spin 30s linear infinite;
 }
 
@@ -220,8 +227,6 @@ a.middle-indicator-text{
     border-radius: 50%;
     background-size: cover;
     box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
-    
-
     -webkit-animation: spin 20s linear infinite;
 }
 
@@ -232,8 +237,7 @@ a.middle-indicator-text{
     background-image: url("image/Jupiter.jpg");
     border-radius: 50%;
     background-size: cover;
-    box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000; 
-
+    box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
     -webkit-animation: spinJupiter 10s linear infinite;
 }
 
@@ -245,10 +249,7 @@ a.middle-indicator-text{
     border-radius: 50%;
     background-size: cover;
     box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
-    
-
     -webkit-animation: spin 100s linear infinite;
-
 }
 
 .mars {
@@ -258,12 +259,8 @@ a.middle-indicator-text{
     background-image: url("image/Marte.jpg");
     border-radius: 50%;
     background-size: cover;
-   // top: 30px !important;
-   // left: 70px !important;
     box-shadow: -10px -20px 50px 0.2px #000 inset, 0 0 2px 0.2px #000;
-    
     -webkit-animation: spinMars 30s linear infinite;
-
 }
 
 .mercury {
@@ -274,10 +271,9 @@ a.middle-indicator-text{
     border-radius: 50%;
     background-size: cover;
     box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
-    
     -webkit-animation: spin 40s linear infinite;
-
 }
+
 .neptune {
     margin: auto;
     width: 200px !important;
@@ -286,9 +282,7 @@ a.middle-indicator-text{
     border-radius: 50%;
     background-size: cover;
     box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
-    
     -webkit-animation: spin 25s linear infinite;
-
 }
 
 .saturn {
@@ -299,10 +293,10 @@ a.middle-indicator-text{
     border-radius: 50%;
     background-size: cover;
     box-shadow: -20px -40px 50px 2px #000 inset, 0 0 20px 2px #000;
-    
     -webkit-animation: spin 15s linear infinite;
 }
-.minisaturn {    
+
+.minisaturn {
     left: 30px;
     position: absolute;
     z-index: 0;
@@ -315,62 +309,110 @@ a.middle-indicator-text{
     -webkit-animation: spin 15s linear infinite;
 }
 
+@media(max-width: 770px) {
+    .fundo {
+        width: auto !important;
+        height: auto !important;
+    }
+    #galaxy {
+        width: 90%;
+        margin: auto;
+        top: 50px;
+    }
+    .description-planets {
+        padding-top: 150px !important;
+    }
+    .description {
+        height: 610px !important;
+        bottom: -380px !important;
+    }
+    .descriptionplan {
+        height: 500px;
+        position: relative;
+    }
 }
+
 
 /* Fim Movimento dos planetas */
 
+
 /* animações individuais */
 
-@-webkit-keyframes spinJupiter{
-    from{
+@-webkit-keyframes spinJupiter {
+    from {
         background-position: left center;
     }
-    to{
+    to {
         background-position: -600px center;
     }
 }
 
-@-webkit-keyframes spinMars{
-    from{
+@-webkit-keyframes spinMars {
+    from {
         background-position: left center;
     }
-    to{
-        background-position: -400px center;
-    }
-
-}
-
-@-webkit-keyframes spin{
-    from{
-        background-position: left center;
-    }
-    to{
+    to {
         background-position: -400px center;
     }
 }
+
+@-webkit-keyframes spin {
+    from {
+        background-position: left center;
+    }
+    to {
+        background-position: -400px center;
+    }
+}
+
+
 /* Fim animações individuais*/
 
 
 /* Standard syntax */
+
 @keyframes zoomDoBanner {
-	50% {
-		-ms-transform: scale(1.5);		/* IE 9 */
-		-webkit-transform: scale(1.5);		/* Safari 3-8 */
-		transform: scale(1.5);
-	}
-	100% {
-		-ms-transform: scale(1);		/* IE 9 */
-		-webkit-transform: scale(1);		/* Safari 3-8 */
-		transform: scale(1);
-	}
+    50% {
+        -ms-transform: scale(1.5);
+        /* IE 9 */
+        -webkit-transform: scale(1.5);
+        /* Safari 3-8 */
+        transform: scale(1.5);
+    }
+    100% {
+        -ms-transform: scale(1);
+        /* IE 9 */
+        -webkit-transform: scale(1);
+        /* Safari 3-8 */
+        transform: scale(1);
+    }
 }
+
+
 /* Safari 4.0 - 8.0 */
+
 @-webkit-keyframes nomedagalaxia {
-  from {top: 300px;font-size: 5px;opacity: 70%;}
-  to {top: 100px;font-size: 60px;opacity: none;}
+    from {
+        top: 300px;
+        font-size: 5px;
+        opacity: 70%;
+    }
+    to {
+        top: 100px;
+        font-size: 60px;
+        opacity: none;
+    }
 }
 
 @keyframes nomedagalaxia {
-  from {top: 300px;font-size: 5px;opacity: 70%;}
-  to {top: 100px; font-size: 60px;opacity: none;}
+    from {
+        top: 300px;
+        font-size: 5px;
+        opacity: 70%;
+    }
+    to {
+        top: 100px;
+        font-size: 60px;
+        opacity: none;
+    }
 }
